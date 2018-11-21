@@ -1,0 +1,46 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang = "pt-BR">
+<head>
+	<title></title>
+	<meta charset="UTF-8"/>
+	<link href="{% static "styles/bootstrap.css" %} "rel = "stylesheet"/>
+	<link href="{% static "styles/main.css" %}"
+		  rel = "stylesheet"/>			
+</head>
+<body style="padding-left: 70px;padding-right: 70px; background-color: #ebebeb">
+
+	<div class="container">
+
+		<div class=" header">
+			<ul class = "nav nav-pills pull-right">
+				<li><a href = "#">Inicio</a></li>
+				<li><a href = "/logout/">Logout</a></li>
+			</ul>
+			<h3 class = "text-muted">Mysite</h3>
+		</div>
+
+		<div class="row">
+
+			<nav class="col-md-3">
+				{% block nav%}
+
+				{% endblock %}
+			</nav>
+
+			<div class="col-md-6" role="main">
+				{% block body %}
+
+
+				{% endblock %}
+			</div>
+
+			<aside role="complementary" class="col-md-3">
+				{% block aside%}
+
+				{% endblock %}
+			</aside>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Questions</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>Perguntas</td>
+            <td>Data de publicação</td>
+            <td>Choices</td>
+            <td>Todal de votos</td>
+        </tr>
+        <tr>
+            <td>{{questao.question_text}}</td>
+            <td>{{questao.pub_date}}</td>
+            <td>{{questao.choices.all}}</td>
+            <td>{{questao.total_votos}}</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+{% extends "base.html" %}
+
+{% block body %}
+<table border="1" class="panel panel-default">
+        <tr>
+            <td>Perguntas</td>
+            <td>Data de publicação</td>
+            <td>Choices</td>
+            <td>Todal de votos</td>
+        </tr>
+        <tr>
+            <td>{{questao.question_text}}</td>
+            <td>{{questao.pub_date}}</td>
+            <td>{{questao.choices.all}}</td>
+            <td>{{questao.total_votos}}</td>
+        </tr>
+    </table>
+{% endblock %}
