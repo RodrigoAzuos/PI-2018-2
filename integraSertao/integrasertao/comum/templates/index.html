@@ -1,0 +1,39 @@
+{% extends "base.html"%}
+
+{%block nav%}
+    <div class="card-panel teal " >
+        <a href="{% url 'add_post' %}" class="btn white black-text text-darken-2">Add post</a>
+    </div>
+{%endblock%}
+{% block body %}
+        {% for post in posts.object_list %}
+            <div class="row">
+                    <div class="card-title gray lighten-2">
+                        <a href="{%url 'exibir_post' post.id%}"><h5 >{{post.titulo}}</h5></a>
+                        <div class="card-panel">
+                            <p>{{post.autor|linebreaksbr}}</p>
+                        </div>
+                    </div>
+                </div>
+        {% endfor %}
+
+<ul class="pagination center" >
+    {%if posts.has_previous%}
+        <li class="waves-effect"><a href="?page={{ posts.previous_page_number }}"> <i class="material-icons">chevron_left</i></a></li>
+    {%else%}
+        <li class="disabled"><a href="#"> <i class="material-icons">chevron_left</i></a></li>
+    {%endif%}
+            <li class="active black"><a href="?page={{ posts.number }}">{{posts.number}}</a></li>
+    {% if posts.has_next %}
+        <li class="waves-effect"><a href="?page={{ posts.next_page_number }}"><i class="material-icons">chevron_right</i></a></li>
+    {%else%}
+        <li class="disabled"><a href="#"><i class="material-icons">chevron_right</i></a></li>
+    {%endif%}
+  </ul>
+{% endblock%}
+
+{%block footer%}
+    <div class="card-panel teal" align="center">
+        <p class="white-text" align="center"> Site ilustrativo  </p>
+    </div>
+{%endblock%}
