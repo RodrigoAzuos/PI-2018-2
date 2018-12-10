@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.core.paginator import Paginator, InvalidPage, EmptyPage
 from django.contrib.auth.decorators import login_required
 from .forms import PostForm
-from comum.models import Post
+from comum.models import Post, AreaTematica
 
 # Create your views here.
 
@@ -45,13 +45,22 @@ def exibir_post(request, post_id):
     return render(request, "post_detalhado.html", {'post': post})
 
 def index2(request):
-    posts = Post.objects.all().order_by('-criado_em')
-    post1 = posts[0]
-    post2 = posts[1]
-    post3 = posts[2]
+    principal = Post.objects.all().order_by('-criado_em')[:3]
+    posts_list = Post.objects.all()
+    areas_tematica = AreaTematica.objects.all().order_by('-nome')
+    paginator = Paginator(posts_list, 6)
+
+    try:
+        page = int(request.GET.get('page', '1'))
+    except ValueError:
+        page = 1
+    try:
+        posts = paginator.page(page)
+    except (EmptyPage, InvalidPage):
+        posts = paginator.page(paginator.num_pages)
 
 
-    return render(request, "index2.html", {'post1': post1 ,'post2': post2, 'post3': post3})
+    return render(request, "index2.html", {'principal': principal, 'posts': posts ,'areas_tematica': areas_tematica})
 
 
 

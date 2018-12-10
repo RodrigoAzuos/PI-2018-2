@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1633fffb-cb1f-4c47-a98d-1ff1e031589f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/media_cdn/arquivos/2018/AVALIACAO_TRABALHO_ID484.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media_cdn/imagens/2018/IMG-20180620-WA0004.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/integrasertao/comum/templates/post_detalhado.html" beforeDir="false" afterPath="$PROJECT_DIR$/integrasertao/comum/templates/post_detalhado.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/integrasertao/integrasertao/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/integrasertao/integrasertao/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/integrasertao/integrasertao/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/integrasertao/integrasertao/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/integrasertao/comum/templates/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/integrasertao/comum/templates/index2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/integrasertao/comum/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/integrasertao/comum/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/integrasertao/comum/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+            <state relative-caret-position="188">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -41,13 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/integrasertao/comum/forms.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/integrasertao/comum/templates/index2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="2325">
+              <caret line="344" column="24" lean-forward="true" selection-start-line="344" selection-start-column="24" selection-end-line="344" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -55,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/integrasertao/comum/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="56" column="65" selection-start-line="56" selection-start-column="65" selection-end-line="56" selection-end-column="65" />
+            <state relative-caret-position="105">
+              <caret line="67" column="6" lean-forward="true" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="18" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -65,19 +61,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/integrasertao/comum/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/integrasertao/comum/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+            <state relative-caret-position="249">
+              <caret line="28" column="12" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="28" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -85,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/integrasertao/comum/templates/post_detalhado.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+            <state relative-caret-position="300">
+              <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -96,11 +83,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/integrasertao/integrasertao/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="413">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="e#637#669#0" expanded="true" />
               </folding>
@@ -109,10 +96,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/integrasertao/usuario/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/integrasertao/integrasertao/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="138" selection-start-line="138" selection-end-line="138" selection-end-column="11" />
+            <state relative-caret-position="167">
+              <caret line="77" selection-start-line="77" selection-end-line="77" />
             </state>
           </provider>
         </entry>
@@ -130,6 +129,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>regis</find>
+      <find>img</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -158,11 +158,12 @@
         <option value="$PROJECT_DIR$/integrasertao/usuario/templates/registrar.html" />
         <option value="$PROJECT_DIR$/integrasertao/comum/templates/add-post.html" />
         <option value="$PROJECT_DIR$/integrasertao/comum/models.py" />
-        <option value="$PROJECT_DIR$/integrasertao/comum/views.py" />
         <option value="$PROJECT_DIR$/integrasertao/comum/templates/post_detalhado.html" />
         <option value="$PROJECT_DIR$/integrasertao/comum/templates/index.html" />
         <option value="$PROJECT_DIR$/integrasertao/integrasertao/settings.py" />
         <option value="$PROJECT_DIR$/integrasertao/integrasertao/urls.py" />
+        <option value="$PROJECT_DIR$/integrasertao/comum/views.py" />
+        <option value="$PROJECT_DIR$/integrasertao/comum/templates/index2.html" />
       </list>
     </option>
   </component>
@@ -177,6 +178,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -187,7 +189,78 @@
             <path>
               <item name="integraSertao" type="b2602c69:ProjectViewProjectNode" />
               <item name="integraSertao" type="462c0819:PsiDirectoryNode" />
+              <item name="integrasertao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="integraSertao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="integraSertao" type="462c0819:PsiDirectoryNode" />
+              <item name="integrasertao" type="462c0819:PsiDirectoryNode" />
+              <item name="comum" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="integraSertao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="integraSertao" type="462c0819:PsiDirectoryNode" />
+              <item name="integrasertao" type="462c0819:PsiDirectoryNode" />
+              <item name="comum" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="integraSertao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="integraSertao" type="462c0819:PsiDirectoryNode" />
+              <item name="integrasertao" type="462c0819:PsiDirectoryNode" />
+              <item name="comum" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="integraSertao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="integraSertao" type="462c0819:PsiDirectoryNode" />
+              <item name="integrasertao" type="462c0819:PsiDirectoryNode" />
+              <item name="comum" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="integraSertao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="integraSertao" type="462c0819:PsiDirectoryNode" />
+              <item name="integrasertao" type="462c0819:PsiDirectoryNode" />
+              <item name="integrasertao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="integraSertao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="integraSertao" type="462c0819:PsiDirectoryNode" />
+              <item name="integrasertao" type="462c0819:PsiDirectoryNode" />
+              <item name="usuario" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="integraSertao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="integraSertao" type="462c0819:PsiDirectoryNode" />
               <item name="media_cdn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="integraSertao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="integraSertao" type="462c0819:PsiDirectoryNode" />
+              <item name="media_cdn" type="462c0819:PsiDirectoryNode" />
+              <item name="arquivos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="integraSertao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="integraSertao" type="462c0819:PsiDirectoryNode" />
+              <item name="media_cdn" type="462c0819:PsiDirectoryNode" />
+              <item name="arquivos" type="462c0819:PsiDirectoryNode" />
+              <item name="2018" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="integraSertao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="integraSertao" type="462c0819:PsiDirectoryNode" />
+              <item name="media_cdn" type="462c0819:PsiDirectoryNode" />
+              <item name="imagens" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="integraSertao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="integraSertao" type="462c0819:PsiDirectoryNode" />
+              <item name="media_cdn" type="462c0819:PsiDirectoryNode" />
+              <item name="imagens" type="462c0819:PsiDirectoryNode" />
+              <item name="2018" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="integraSertao" type="b2602c69:ProjectViewProjectNode" />
@@ -197,7 +270,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -244,8 +316,8 @@
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="694" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34326136" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4973262" visible="true" weight="0.34326136" />
+      <window_info id="Structure" order="1" sideWeight="0.5026738" side_tool="true" visible="true" weight="0.34326136" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -285,13 +357,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../api-condominium/connectedin/lib/python3.6/site-packages/django/urls/resolvers.py" />
     <entry file="file://$PROJECT_DIR$/../api-condominium/connectedin/lib/python3.6/site-packages/django/forms/forms.py" />
-    <entry file="file://$PROJECT_DIR$/integrasertao/usuario/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="28" selection-start-column="28" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/integrasertao/usuario/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5">
@@ -335,38 +400,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/media_cdn/WhatsApp_Image_2018-09-14_at_2.55.37_PM_Zx34ZoO.jpeg" />
     <entry file="file://$PROJECT_DIR$/integrasertao/comum/templates/WhatsApp_Image_2018-09-14_at_2.55.37_PM_Zx34ZoO.jpeg" />
-    <entry file="file://$PROJECT_DIR$/integrasertao/comum/templates/add-post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/integrasertao/comum/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/integrasertao/comum/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
             <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/integrasertao/comum/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="56" column="65" selection-start-line="56" selection-start-column="65" selection-end-line="56" selection-end-column="65" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -378,37 +416,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/integrasertao/integrasertao/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/integrasertao/comum/templates/post_detalhado.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+        <state relative-caret-position="300">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/integrasertao/comum/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/integrasertao/integrasertao/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/integrasertao/comum/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+        <state relative-caret-position="105">
+          <caret line="67" column="6" lean-forward="true" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/integrasertao/comum/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/integrasertao/integrasertao/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="138" selection-start-line="138" selection-end-line="138" selection-end-column="11" />
+        <state relative-caret-position="167">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/integrasertao/comum/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="28" column="12" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="28" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/integrasertao/comum/templates/add-post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/integrasertao/integrasertao/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="413">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="e#637#669#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/integrasertao/usuario/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/integrasertao/comum/templates/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2325">
+          <caret line="344" column="24" lean-forward="true" selection-start-line="344" selection-start-column="24" selection-end-line="344" selection-end-column="24" />
         </state>
       </provider>
     </entry>
