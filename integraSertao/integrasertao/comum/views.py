@@ -7,7 +7,9 @@ from comum.models import Post, AreaTematica
 # Create your views here.
 
 def index(request):
+    principal = Post.objects.all().order_by('-criado_em')[:3]
     posts_list = Post.objects.all()
+    areas_tematica = AreaTematica.objects.all().order_by('-nome')
     paginator = Paginator(posts_list, 6)
 
     try:
@@ -19,7 +21,8 @@ def index(request):
     except (EmptyPage, InvalidPage):
         posts = paginator.page(paginator.num_pages)
 
-    return render(request, "index.html", {'posts': posts})
+
+    return render(request, "index2.html", {'principal': principal, 'posts': posts ,'areas_tematica': areas_tematica})
 
 @login_required(login_url='/login')
 def add_post(request):
@@ -44,25 +47,7 @@ def exibir_post(request, post_id):
     post = Post.objects.get(pk=post_id)
     return render(request, "post.html", {'post': post})
 
-def index2(request):
-    principal = Post.objects.all().order_by('-criado_em')[:3]
-    posts_list = Post.objects.all()
-    areas_tematica = AreaTematica.objects.all().order_by('-nome')
-    paginator = Paginator(posts_list, 6)
-
-    try:
-        page = int(request.GET.get('page', '1'))
-    except ValueError:
-        page = 1
-    try:
-        posts = paginator.page(page)
-    except (EmptyPage, InvalidPage):
-        posts = paginator.page(paginator.num_pages)
-
-
-    return render(request, "index2.html", {'principal': principal, 'posts': posts ,'areas_tematica': areas_tematica})
-
-def search(request, palavra_chave):
+def buscar(request, palavra_chave):
 
     posts_list = Post.objects.filter(palavras_chave__icontains = palavra_chave)
     paginator = Paginator(posts_list, 6)
