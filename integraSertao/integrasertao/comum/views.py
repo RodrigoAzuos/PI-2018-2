@@ -44,5 +44,14 @@ def exibir_post(request, post_id):
     post = Post.objects.get(pk=post_id)
     return render(request, "post_detalhado.html", {'post': post})
 
+def index2(request):
+    posts = Post.objects.all().order_by('-criado_em')
+    post1 = posts[0]
+    post2 = posts[1]
+    post3 = posts[2]
+
+
+    return render(request, "index2.html", {'post1': post1 ,'post2': post2, 'post3': post3})
+
 
 
