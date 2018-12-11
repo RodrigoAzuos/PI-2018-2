@@ -23,8 +23,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('usuario.urls')),
     path('', views.index, name='index'),
-    path('add-post/', views.add_post, name='add_post'),
+    path('add-post/', views.add_post, name='add-post'),
     path('post/<int:post_id>/', views.exibir_post, name='exibir_post'),
+    path('categoria/<int:categoria_id>/', views.filtrar_categoria, name='filtrar'),
     path('buscar/<slug:palavra_chave>/', views.buscar, name='buscar'),
     # re_path(r'^buscar/(?P<palavra_chave>\w+)/$', views.buscar, name='buscar'),
 

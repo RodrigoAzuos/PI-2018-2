@@ -66,22 +66,22 @@
                     </li>
                 </ul> <!-- end header__social -->
 
-                <a class="header__search-trigger" href="#0"></a>
+                <!--<a class="header__search-trigger" href="#0"></a>-->
 
-                <div class="header__search">
+                <!--<div class="header__search">-->
+                  <!---->
+                    <!--&lt;!&ndash;<form role="search" method="get" class="header__search-form" action="">&ndash;&gt;-->
+						<!--&lt;!&ndash;{% csrf_token %}&ndash;&gt;-->
+                        <!--&lt;!&ndash;<label>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<span class="hide-content">Search for:</span>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<input type="search" class="search-field" placeholder="Pesquise por palavras-chave" value="" name="busca" title="Pequise por:" autocomplete="off">&ndash;&gt;-->
+                        <!--&lt;!&ndash;</label>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<input type="submit" class="search-submit" value="Search">&ndash;&gt;-->
+                    <!--&lt;!&ndash;</form>&ndash;&gt;-->
 
-                    <form role="search" method="get" class="header__search-form" action="">
-						{% csrf_token %}
-                        <label>
-                            <span class="hide-content">Search for:</span>
-                            <input type="search" class="search-field" placeholder="Pesquise por palavras-chave" value="" name="busca" title="Pequise por:" autocomplete="off">
-                        </label>
-                        <input type="submit" class="search-submit" value="Search">
-                    </form>
+                    <!--<a href="#0" title="Fechar Pesquisa" class="header__overlay-close">Close</a>-->
 
-                    <a href="#0" title="Fechar Pesquisa" class="header__overlay-close">Close</a>
-
-                </div>  <!-- end header__search -->
+                <!--</div>  &lt;!&ndash; end header__search &ndash;&gt;-->
 
 
                 <a class="header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>
@@ -96,13 +96,18 @@
                             <a href="#0" title="">Categorias</a>
                             <ul class="sub-menu">
                             {% for area_tematica in areas_tematica%}
-                                <li><a href="category.html">{{area_tematica}}</a></li>
+                                <li><a href="{% url 'filtrar' area_tematica.id%}">{{area_tematica}}</a></li>
                             {%endfor%}
                             </ul>
                         </li>
 
                         <li><a href="about.html" title="">Sobre</a></li>
-                        <li><a href="{%url 'login' %}" title="">Entrar</a></li>
+                        <li><a href="{%url 'add-post' %}" title="">Enviar Trabalho</a></li>
+                        {% if logado%}
+                            <li><a href="{%url 'logout' %}" title="">Sair</a></li>
+                        {% else %}
+                            <li><a href="{%url 'login' %}" title="">Entrar</a></li>
+                        {%endif%}
                     </ul> <!-- end header__nav -->
 
                     <a href="#0" title="Close Menu" class="header__overlay-close close-mobile-menu">Close</a>
