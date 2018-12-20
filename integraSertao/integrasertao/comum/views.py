@@ -45,4 +45,32 @@ def exibir_post(request, post_id):
     return render(request, "post_detalhado.html", {'post': post})
 
 
+def search(request, palavra_chave):
 
+    posts_list = Post.objects.filter(palavras_chave__icontains = palavra_chave)
+    paginator = Paginator(posts_list, 6)
+
+    try:
+        page = int(request.GET.get('page', '1'))
+    except ValueError:
+        page = 1
+    try:
+        posts = paginator.page(page)
+    except (EmptyPage, InvalidPage):
+        posts = paginator.page(paginator.num_pages)
+
+    return render(request, "search.html", {'posts': posts})
+
+def like(request, post_id):
+
+    post = Post.objects.filter(pk=post_id)
+    post.like(request.user.perfil)
+
+    return redirect('index post_id')
+
+
+def deslike(request, post_id):
+    post = Post.objects.filter(pk=post_id)
+    post.deslike(request.user.perfil)
+
+    return redirect('index post_id')

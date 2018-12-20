@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Integra sertão</title>
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!--Let browser know website is optimized for mobile-->
@@ -12,25 +14,37 @@
 </head>
 <body >
 
-
+	<div class="container">
 
 		<div class=" header">
-			<h1>Integra sertão</h1>
+			<h1>Strans API</h1>
 		</div>
 
 		<div class="row" >
 
-			<div class="col s12 section" >
+			<div class="col s12 section">
 				{% block nav%}
 
 				{% endblock %}
             </div>
 
-			<div class="col s12 section">
+            <div class="col s1 section">
+                {%block rigt%}
+                {%endblock%}
+
+            </div>
+
+			<div class="col s10 section">
 				{% block body %}
+
 
 				{% endblock %}
 			</div>
+
+            <div class="col s1 section">
+                {%block left%}
+                {%endblock%}
+            </div>
 
             <div class="col s12 section">
                 {%block footer%}
@@ -39,6 +53,6 @@
             </div>
 
 		</div>
-
+	</div>
 </body>
 </html>

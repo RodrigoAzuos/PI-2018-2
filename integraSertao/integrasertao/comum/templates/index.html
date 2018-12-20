@@ -6,16 +6,19 @@
     </div>
 {%endblock%}
 {% block body %}
-        {% for post in posts.object_list %}
-            <div class="row">
-                    <div class="card-title gray lighten-2">
-                        <a href="{%url 'exibir_post' post.id%}"><h5 >{{post.titulo}}</h5></a>
-                        <div class="card-panel">
-                            <p>{{post.autor|linebreaksbr}}</p>
-                        </div>
-                    </div>
-                </div>
-        {% endfor %}
+        {% if posts.object_list.0.autor %}
+            {{posts.object_list.0.autor}}
+        {% endif %}
+        <!--{% for post in posts.object_list %}-->
+            <!--<div class="row">-->
+                    <!--<div class="card-title gray lighten-2">-->
+                        <!--<a href="{%url 'exibir_post' post.id%}"><h5 >{{post.titulo}}</h5></a>-->
+                        <!--<div class="card-panel">-->
+                            <!--<p>{{post.autor|linebreaksbr}}</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+        <!--{% endfor %}-->
 
 <ul class="pagination center" >
     {%if posts.has_previous%}
@@ -27,7 +30,8 @@
     {% if posts.has_next %}
         <li class="waves-effect"><a href="?page={{ posts.next_page_number }}"><i class="material-icons">chevron_right</i></a></li>
     {%else%}
-        <li class="disabled"><a href="#"><i class="material-icons">chevron_right</i></a></li>
+        <li class="disabled"><a href="#"><i class="material-icons prefix">chevron_right</i></a></li>
+
     {%endif%}
   </ul>
 {% endblock%}

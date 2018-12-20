@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block body%}
+
+    <table class="highlight centered">
+        <thead>
+          <tr>
+              <th>Código da linha</th>
+              <th>Denominação</th>
+              <th>origem</th>
+          </tr>
+        </thead>
+
+        <tbody>
+        {% for linha in linhas %}
+          <tr>
+            <td>{{linha.CodigoLinha}}</td>
+            <td>{{linha.Denomicao}}</td>
+            <td>{{linha.Origem}}</td>
+          </tr>
+        {% endfor %}
+
+        </tbody>
+      </table>
+
+<ul class="pagination center" >
+    {%if linhas.has_previous%}
+        <li class="waves-effect"><a href="?page={{ linhas.previous_page_number }}"> <i class="material-icons">chevron_left</i></a></li>
+    {%else%}
+        <li class="disabled"><a href="#"> <i class="material-icons">chevron_left</i></a></li>
+    {%endif%}
+            <li class="active black"><a href="?page={{ linhas.number }}">{{linhas.number}}</a></li>
+    {% if linhas.has_next %}
+        <li class="waves-effect"><a href="?page={{ linhas.next_page_number }}"><i class="material-icons">chevron_right</i></a></li>
+    {%else%}
+        <li class="disabled"><a href="#"><i class="material-icons">chevron_right</i></a></li>
+    {%endif%}
+</ul>
+{%endblock%}
