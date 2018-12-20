@@ -1,6 +1,8 @@
-{% extends "base_usuario.html" %}
+{% extends "base.html"%}
 
-{% block body %}
+{% block content %}
+
+<section class="s-content s-content--narrow">
 <form class = "form-signin"  method="post"
 	action="{% url 'registrar' %}">
 	{% csrf_token %}
@@ -32,9 +34,6 @@
 
 	<input 	name="senha" id = "id_senha" class = "form-control"
 			type = "password" placeholder="Senha" required>
-
-
-
 	<hr/>
 	<button class="btn btn-lg btn-primary btn-block"
 			type = "submit" value="Login">Registrar</button>
@@ -49,5 +48,5 @@
 	{% endif %}
 </form>
 
-
+</section>
 {% endblock %}

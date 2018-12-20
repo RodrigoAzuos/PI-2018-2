@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+    <!-- styles
+    ================================================== -->
+    <section class="s-content s-content--narrow">
+
+        <div class="row">
+
+            <div class="col-six tab-full">
+
+                <h3>{{post.titulo}}</h3>
+
+                <br/>
+
+                <p align="justify">
+                <a href="#"><img width="120" height="120" class="pull-left" alt="sample-image" src="{{post.foto.url}}"></a>
+                {{post.resumo}}
+                </p>
+
+                <br/>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;<code>Palavras Chave</code>
+
+                <br/>
+
+                <p>
+                <a href="{{ post.arquivo.url }}"><img width="200" height="80" class="pull-left" alt="sample-image" src="{% static 'images/visualizar_arquivo.png' %}"></a>
+                </p>
+
+            </div>
+
+            <div class="col-six tab-full">  
+
+                <h3>Informações Adicionais</h3>
+
+                <br/>
+
+                <p>Autor Principal:
+                <small>{{post.autor}}</small>
+                </p>
+
+                <br/>
+
+                <p>Co-autores:
+                <small>{{post.coautor}}</small>
+                </p>
+
+                <br/>
+
+                <p>Área Temática:
+                <small>{{post.area_tematica}}</small>
+                </p>
+
+                <br/>
+
+                <p>Tipo:
+                <small>{{post.tipo}}</small>
+                </p>
+
+            </div>
+
+        </div> <!-- end row -->
+
+    </section> <!-- end styles -->
+    {% endblock %}
+    <!-- s-footer

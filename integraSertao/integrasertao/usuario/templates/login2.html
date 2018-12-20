@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+    {% block content%}
+    <!-- s-content
+    ================================================== -->
+    <section class="s-content s-content--narrow">
+
+        <div class="row">
+
+            <div class="s-content__header col-full">
+                <h1 class="s-content__header-title">
+                    Insira suas credenciais de acesso
+                </h1>
+            </div>
+    
+            <div class="col-full s-content__main">
+
+                <form name="Form" id="Form" method="post" action="{% url 'login' %}">
+                    {% csrf_token %}
+                    <fieldset>
+
+                        <div class="form-field">
+                            <input name="username" type="text" id="id_username" class="full-width" placeholder="Digite seu usuário" value="">
+                        </div>
+
+                        <div class="form-field">
+                            <input name="password" type="password" id="id_password" class="full-width" placeholder="Digite sua senha" value="">
+                        </div>
+
+                        <button type="submit" class="submit btn btn--primary full-width" value="Entrar">Entrar</button>
+
+                        <input type="hidden" value="next" value="{{ next }}"/>
+
+                    </fieldset>
+                </form> <!-- end form -->
+
+                <br/>
+
+                <h6>Não possui uma conta? <a href="{% url 'registrar' %}"><strong>Cadastre-se.</strong></a></h6>
+            </div> <!-- end s-content__main -->
+
+        </div> <!-- end row -->
+
+        {% if form.errors %}
+            <div class="alert alert-danger">
+                <button type="button" class="close" data-dismiss="alert"
+                aria-hidden="true">x
+                </button>
+                por favor, verifique o Email e/ou senha informados
+            {{ form.errors}}
+            </div>
+        {% endif %}
+
+    </section> <!-- s-content -->
+
+{% endblock%}
