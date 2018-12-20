@@ -6,15 +6,15 @@ import requests
 
 def get_token(request):
 
-    body = {'email': 'rodrigoesilvasouza@gmail.com',
-            'password': 'Dani9698'}
+    body = {'email': 'SEU EMAIL',
+            'password': 'SUA SENHA'}
 
     url = 'https://api.inthegra.strans.teresina.pi.gov.br/v1/signin'
     #
     headers = {"Content-Type": "application/json",
                "Accept-Language": "en",
                "Date": "Wed, 19 Dec 2018 19:46:12 GMT",
-               "X-Api-Key": "73f9879b59504bdfb60e13aface78c08"}
+               "X-Api-Key": "SUA CHAVE API"}
 
     token = requests.post(url, json=body, headers=headers).json()['token']
 
