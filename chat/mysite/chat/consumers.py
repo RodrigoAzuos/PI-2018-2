@@ -46,5 +46,5 @@ class ChatConsumer(WebsocketConsumer):
             'message': message
         }))
 
- 'message': message
+
 
